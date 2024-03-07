@@ -10,7 +10,6 @@
     display: grid;
     width: 100%;
     height: 50px;
-    background: red;
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -44,4 +43,87 @@
 
 .logo i, .burger i{
     font-size: 24px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    grid-gap: 25px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.banner__title{
+    padding: 10px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.banner__publicidad{
+    display: flex;
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__logo img{
+    height: 130px;
+}
+
+.banner__card{
+    display: flex;
+    width: 92vw;
+    height: 130px;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background: var(--color-ternario);
+    box-shadow: var(--color-shado-transparent);
+}
+
+.banner__data{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.banner__data strong{
+    font-family: "SF-Pro-Text-Bold";
+}
+
+.banner__data small{
+    font-family: "SF-Pro-Text-Regular";
+}
+
+.banner__close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border: none;
+    right: 10px;
+    top: 5px;
+    border-radius: 100%;
+    background: var(--color-primary);
+    color: var(--color-ternario);
+}
+
+.banner__more{
+    border: none;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-ternario);
+    background: var(--color-primary);
 }
