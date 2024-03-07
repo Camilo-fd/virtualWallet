@@ -132,6 +132,53 @@
     background: var(--color-primary);
 }
 
+[data-card]::before {
+    content: attr(data-card);
+    color: var(--color-primary);
+    font-family: "SF-Pro-Text-Bold";
+}
+
+.carusel__card {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: auto;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.carusel__img {
+    min-width: 55%;
+    min-height: 40vh;
+    background: url(../storage/img/card.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-ternario);
+}
+
+.carusel__img small,
+.carusel__img img {
+    position: absolute;
+}
+
+.carusel__img small {
+    top: 20px;
+    right: 20px;
+}
+
+.carusel__img img {
+    left: 20px;
+    bottom: 20px;
+}
+
 /************ MENU ************/
 
 .menu{
