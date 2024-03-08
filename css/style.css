@@ -10,29 +10,13 @@
 
 .header{
     display: grid;
-    width: 100%;
-    height: 50px;
+    /* width: 100%;
+    height: 50px; */
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
     "logo burger";
-}
-
-.logo{
-    grid-area: logo;
-    gap: 10px;
-}
-
-.burger{
-    grid-area: burger;
-    justify-content: flex-end;
-}
-
-.logo h1{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-family: "SF-Pro-Text-Bold";
 }
 
 .logo, .burger{
@@ -41,6 +25,22 @@
     height: 25px;
     flex-direction: row;
     align-items: center;
+}
+
+.logo{
+    grid-area: logo;
+    gap: 10px;
+}
+
+.logo h1{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: "SF-Pro-Text-Bold";
+}
+
+.burger{
+    grid-area: burger;
+    justify-content: flex-end;
 }
 
 .logo i, .burger i{
@@ -59,13 +59,17 @@
 .banner{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
-.banner__title{
-    padding: 10px;
+.carusel__title, .banner__title{
+    padding: 10px 0;
+}
+
+.carusel__title h3, .banner__title h3 {
     font-size: 1.4rem;
     text-transform: capitalize;
+    font-family: "SF-Pro-Text-Bold";
 }
 
 .banner__publicidad{
@@ -96,37 +100,60 @@
     width: 80%;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
     padding: 0 20px;
 }
 
 .banner__data strong{
     font-family: "SF-Pro-Text-Bold";
+    font-size: 20px;
+    /* margin-top: 10px; */
 }
 
 .banner__data small{
     font-family: "SF-Pro-Text-Regular";
+    color: grey;
+    margin-top: 0.3rem;
 }
 
 .banner__close{
+    position: absolute;
     width: 25px;
     height: 25px;
-    position: absolute;
     border: none;
     right: 10px;
     top: 5px;
     border-radius: 100%;
+    margin-top: 7px;
+    margin-right: 3px;
     background: var(--color-primary);
     color: var(--color-ternario);
 }
 
+.banner__close i{
+    font-size: 1.5rem;
+}
+
+.banner__title{
+    /* padding: 10px; */
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.banner__data i{
+    margin-top: 3px;
+    font-size: 20px;
+}
+
 .banner__more{
     border: none;
+    width: 60%;
+    height: 25%;
     margin-top: 10px;
     padding: 5px;
-    border-radius: 10px;
-    font-size: 0.8rem;
+    border-radius: 18px;
+    font-size: .6rem;
     font-family: "SF-Pro-Text-Bold";
     color: var(--color-ternario);
     background: var(--color-primary);
