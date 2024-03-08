@@ -10,35 +10,77 @@
 
 /* .header{
     display: grid;
-    width: 100%;
-    height: 50px;
-    background: red;
+    width: 100vw;
+    height: 400px;
     padding: 10px;
     position: absolute;
+    overflow: hidden;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat (1,1fr);
     grid-template-areas:
     "logo burger"
 } */
 
-body{
-    width: 100%;
-    overflow-x: auto
-}
-
-.header{
+/* .caja__circulo{
     background: #33404F;
     width: 150vw;
-    height: 100vh;
+    height: 50vh;
     position: absolute;
-    z-index: 2;
+    left: -110px;
+    bottom: 100px;
+    z-index: -2;
     border-radius: 100%;
-    bottom: 60%;
-    left: -25%;
+
+} */
+
+.header{
+    display: grid;
+    width: 100vw;
+    height: 150vh;
+    padding: 10px;
+    position: absolute;
+    overflow: hidden;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat (1,1fr);
+    grid-template-areas:
+    "logo burger"
 }
 
-.circulitos__header{
-    background: var(--color-circle);
+.contenedor__circulo{
+    width: 120vw;
+    height: 50vh;
+    position: absolute;
+    left: -10%;
+    bottom: 80%;
+    z-index: -2;
+    background: var(--color-secundary);
+    border-radius: 100%;
+}
+
+.caja__circulo{
+    background: #33404F;
+    width: auto;
+    height: auto;
+}
+
+.circulitos1{
+    background: gray;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    bottom: -50%;
+    left: 20%;
+}
+
+.circulitos2{
+    background: gray;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 45%;
+    left: -20%;
 }
 
 .logo{
