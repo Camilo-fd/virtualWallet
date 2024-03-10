@@ -138,7 +138,7 @@ progress[value]::-moz-progress-bar {
 
 .activities__title h3,
 .transactions__title h3{
-    background: olive;
+    /* background: olive; */
     font-size: 1.4rem;
     text-transform: capitalize;
     font-family: "SF-pro-Text-Bold";
@@ -187,4 +187,68 @@ progress[value]::-moz-progress-bar {
 
 .activities__carusel__img h4 {
     bottom: 20px;
+}
+
+.transactions{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transactions__balance{
+    /* background: red; */
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.transactions__carucel{
+    /* background: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactions__description{
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transactions__up,
+.transactions__down{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+    color: var(--color-primary);
+}
+
+.transactions__down{
+    color: var(--color-secundary);
+}
+
+.transactions__description i{
+    font-size: 1.8em;
+}
+
+
+
+.transactions__description div p,
+.transactions__value p{
+    font-family: "SF-Pro-Text-Semibold";
+    text-transform: capitalize;
+    
+}
+
+.transactions__description div small,
+.transactions__value small{
+    color: var(--color-cuarto);
+    font-family: "SF-Pro-Text-Light";
+    text-transform: capitalize;
 }
