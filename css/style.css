@@ -32,11 +32,11 @@
 .circulo{
     background: #00DDA3;
     border-radius: 100%;
-    width: 60%;
-    height: 60%;
+    width: 53%;
+    height: 26vh;
     position: absolute;
-    left: 20%;
-    top: 15%;
+    left: 22%;
+    top: 25%;
 }
 
 .circulo .cont__circulo{
@@ -46,11 +46,19 @@
     height: 60%;
     left: 20%;
     top: 20%;
-    font-size: xx-large;
     flex-direction: column;
     justify-content: center;text-align: center;
-    font-family: "SF-Pro-Text-Regular";
     color: var(--color-icon);
+    font-family: "SF-Pro-Text-Bold";
+    font-size: 20px;
+}
+
+.circulo h4{
+    font-size: x-large;
+}
+
+.circulo p{
+    font-size: large;
 }
 
 .logo{
@@ -85,17 +93,108 @@
 /************ CONTENIDO PRINCIPAL ************/
 
 .container{
-    border: solid blue;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(1, 1fr);
-    padding: 10px;
-    grid-gap: 25px;
+    display: flex;
+    width: 100%;
+    height: 50%;
     position: absolute;
+    flex-direction: column;
     top: 50%;
 }
 
-.contenido_balance{
+.balance__total{
+    display: flex;
     width: 100%;
-    height: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 85%;
+}
+
+.container .caja__1{
+    display: flex;
+    border-radius: 100px;
+    background: #33404F;
+    color: var(--color-icon);
+    padding: 8px;
+    width: 25%;
+    height: 40%;
+    justify-content: center;
+}
+
+.container .caja__2{
+    display: flex;
+    border-radius: 100px;
+    border: 2px solid #00DDA3;
+    color: #00DDA3;
+    padding: 8px;
+    width: 20%;
+    height: 40%;
+    justify-content: center;
+}
+
+.container .caja__3{
+    display: flex;
+    border-radius: 100px;
+    border: 2px solid #B5C5C3;
+    color: #B5C5C3;
+    padding: 8px;
+    width: 25%;
+    height: 40%;
+    justify-content: center;
+}
+
+.container .caja__img{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 40%;
+    justify-content: center;
+}
+
+.parte__baja{
+    display: flex;
+    height: 34%;
+    flex-direction: row;
+    position: absolute;
+    background: #e3faee;
+    top: 66%;
+}
+
+.parte__baja .caja__img2{
+    display: flex;
+    width: 35%;
+    height: 85%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.parte__baja img{
+    object-fit: contain;
+    width: 7rem;
+    /* border: solid black; */
+}
+
+.caja__4{
+    display: flex;
+    justify-content: flex-start;
+    width: 61%;
+    height: 85%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner__close i{
+    font-size: 24px;
+    background: var(--color-primary);
+    color: var(--color-icon);
+    border-radius: 100%;
+    padding: 1%;
+}
+
+.banner__close{
+    display: flex;
+    justify-content: flex-end;
 }
