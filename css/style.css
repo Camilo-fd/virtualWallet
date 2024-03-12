@@ -5,23 +5,17 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
-@import url(variables.css);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "SF-Pro-Text-Regular";
-}
+
 
 .banner{
     background: var(--color-secundary);
     position: absolute;
-    z-index: -10;
+    z-index: -1;
 }
 
 .banner img{
-    width: 100%;
-    height: 120vh;
+    width: 100vw;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -37,7 +31,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px 10px;
-    bottom: 50px;
+    bottom: 10px;
     height: 100vh;
 }
 
@@ -51,7 +45,9 @@
 .profile__titule{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     text-transform:  capitalize;
     color: var(--color-ternario);
 }
@@ -60,139 +56,99 @@
     font-family: "SF-Pro-Text-Heavy.otf";
 }
 
-.profile__titule p{
-    font-size: 2.3em;
+.profile__titule #account{
+    font-size: 25px
+}
+
+.profile__titule i{
+    font-size: 1.5em;
     font-family: "SF-Pro-Text-Regular";
 }
 
-.profile__process{
+.profile__savings{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
     color: var(--color-ternario);
-}
-
-.profile__savings, .profile__assets{
-    display: flex;
     flex-direction: column;
-    width: 45%;
-}
-
-.profile__savings small,
-.profile__assets small{
-    text-transform: uppercase;
-    font-size: .8em;
-    margin-bottom: 5px;
-}
-
-.profile__savings label,
-.profile__assets label{
-    font-family: "SF-Pro-Text-Semibold";
-    font-size: 1.3em;
-}
-
-.profile__savings progress,
-.profile__assets progress{
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+    gap: 10px;
 }
 
-.profile__savings progress[value] {
-    --color: var(--color-primary);
-    --background: var(--color-ternario);
-    background: var(--background);
+.profile__savings h4,p{
+    display: flex;
+    justify-content: center;
 }
 
-.profile__assets progress[value] {
-    --color: var(--color-cuarto);
-    --background: var(--color-ternario);
-    background: var(--background);
+.profile__savings p{
+    font-size: 30px;
 }
 
-progress[value] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    height: .5em;
-    border-radius: 10em;
+.profile__savings i{
+    font-size: 20px;
+    color: var(--color-cuarto)
 }
-
-.profile__savings progress[value]::-webkit-progress-bar,
-.profile__assets progress[value]::-webkit-progress-bar {
-    border-radius: 10em;
-    height: .5em;
-    background: var(--background);
-}
-
-progress[value]::-webkit-progress-value {
-    border-radius: 10em;
-    background: var(--color);
-}
-
-progress[value]::-moz-progress-bar {
-    border-radius: 10em;
-    background: var(--color);
-}
-
-.activities__title h3,
-.transactions__title h3{
-    /* background: olive; */
-    font-size: 1.4rem;
-    text-transform: capitalize;
-    font-family: "SF-pro-Text-Bold";
-}
-
 
 
 .activities__carusel__card {
     width: 95vw;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
-    margin: auto;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     margin: 15px 0;
 }
 
+.activities__title{
+    font-size: x-large;
+    text-align: center;
+}
+
 .activities__carusel__img {
-    min-width: 30%;
-    min-height: 19vh;
-    background: var(--color-ternario);
-    box-shadow: var(--color-shadow-transparent);
-    border-radius: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-width: 20vw;
+    min-height: 10vh;
+    background: var(--color-cuarto);
+    /* box-shadow: 0 0 8px 2px rgba(213, 75, 1, 0.89); */
+    border-radius: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: var(--color-secundary);
+    color: var(--color-primary);
     margin: 15px 0;
 }
 
-.activities__carusel__img small,
-.activities__carusel__img h4 {
-    position: absolute;
+.letras{
+    display: flex;
+    justify-content: center;
+    gap: 18%;
+    position: relative;
+    bottom: 25px;
 }
 
 .activities__carusel__img i {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
-.activities__carusel__img h4 {
-    bottom: 20px;
-}
 
 .transactions{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.transactions__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.transactions__title p{
+    color: var(--color-cuarto);
 }
 
 .transactions__balance{
@@ -229,20 +185,11 @@ progress[value]::-moz-progress-bar {
     color: var(--color-primary);
 }
 
-.transactions__down{
-    color: var(--color-secundary);
-}
-
-.transactions__description i{
-    font-size: 1.8em;
-}
-
-
-
 .transactions__description div p,
 .transactions__value p{
     font-family: "SF-Pro-Text-Semibold";
     text-transform: capitalize;
+    font-size: large;
     
 }
 
@@ -251,4 +198,24 @@ progress[value]::-moz-progress-bar {
     color: var(--color-cuarto);
     font-family: "SF-Pro-Text-Light";
     text-transform: capitalize;
+}
+
+.transactions__value{
+    color: red;
+}
+
+.transactions__value .aumento{
+    color: green;
+}
+
+.grafica{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 10%; 
+}
+
+.grafica img{
+    width: 80vw;
+    height: 100%;
 }
