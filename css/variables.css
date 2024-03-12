@@ -8,8 +8,8 @@
 }
 
 :root{
-    --color-primary: #58008E;
+    --color-primary: #470519;
     --color-secundary: #33404F;
     --color-letters: #fff;
-    --color-shado-tranparent: 0px 0px 10px rgba(0, 0, 0, 0.216);
+    --color-fluorescent: rgba(214, 192, 199, 92%);
 }
